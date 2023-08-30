@@ -54,10 +54,31 @@ yarn install
 yarn dev
 ```
 
+## Como executar os testes
+
+Acessar no terminal a pasta "api" e rodar o comando yarn dev para subir aplicação
+
+Acessar no terminal a pasta de "tests" e rodar o comando de acordo com o teste a ser executado por exemplo:
+```sh
+   k6 run hello.js
+   k6 run signup.js
+   k6 run signup-smoke.js
+   k6 run signup-load.js
+   k6 run --vus 10 --duration 30s signup.js
+   k6 run --vus 10 --duration 30s hello.js
+   k6 run signup-stress.js   
+```
+
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+### Adicionais
 
-Feito com 💜 &nbsp;por Fernando Papito 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/papitoio/)
+```sh
+- Aulas no youtube: https://www.youtube.com/@papitorocks
+- Play list: (https://www.youtube.com/playlist?list=PLn2i8I7W73irNVpzHDU2oKWCKLa2VPWEx)
+- Repositório para plugin de report: https://github.com/benc-uk/k6-reporter
+```
